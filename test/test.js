@@ -2,7 +2,7 @@
 describe, it
 */
 
-var basics = require('../basics')
+var basics = require('../../fileSomething.js')
 const chai = require('chai')
 console.log('basics', basics)
 var expect = chai.expect

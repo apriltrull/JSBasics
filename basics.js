@@ -12,19 +12,38 @@ var arr=[12, 42, 36, 51, 96];
 
 // 2. Create a function called findTwo that takes in the arr array and returns
 // the value at index 2.
+findTwo = function(arr){
+  return arr[2];
+};
 
 // 3. Create a function called pusher that takes in an array and a number and
 // positions the number at the end of the array. Return the new array.
+pusher= function(arry, elem1){
+  arry.push(elem1);
+  return arry;
+};
+
 
 // 4. Create a function called upFront that takes in an array and a number and
 // positions the number in beginning of the array. Return the new array.
+upFront= function (arry, elem2) {
+  arry.unshift(elem2);
+  return arry;
+};
 
 // 5. Create a function called remover that takes in an array and removes the
 // value at the end of the array. Return the new array.
+remover = function(arry) {
+  arry.splice(-1,1);
+  return arry;
+};
 
 // 6. Create a function called copyCat that takes in an array, copies, and
 // returns the second and third index values.
-
+copyCat=function(arry) {
+var copy = arr;
+return[copy [3], [4]];
+};
 // 7. Create a function called chopIt that takes in an array and two numbers.
 // It deletes the original 3rd index value and inserts the two numbers in it's place.
 
@@ -39,39 +58,90 @@ var arr=[12, 42, 36, 51, 96];
 // 10. Create a function called timesTen that takes in an array and multiplies
 // each value by 10 and returns the new array.
 // Hint: Use the map method
+var newArr = arr.map(function (x)
+{areturn x *10});
+return newArr;}
 
 // Objects
 
 // 1. Create an object called animal. Make sure the animal has the following
 // keys. (species, name, age, gender, favoriteFood) Also, give the animal a
 // method of speech that returns a string that displays what the animal says.
+function Animal (){
+this.species="cat";
+this.name = "Bob";
+this.age = 32'
+this.gender = "Male";
+this.favoriteFood =  "Kibble";
+this.speech = function() {
+return "hello";}
+}
+
 
 // 2. Create a function called findAge that takes in an object and returns the
 // age key value.
 
+function findAge(obj);{
+return obj.age;
+}
 // 3. Create a function called getKeys that takes in an object and returns all
 // of the key names (not values!).
+function getKeys(obj);{
+return Object.keys(obj);
+}
 
 // 4. Create a function called changeName that takes in an object and a name
 // value and replaces the object name with the given name value. Return the new object.
+function changeName(obj, name);{
+obj.name=name;
+return obj;
+}
 
 // 5. Create a function called speechMaker that takes in an object and returns
 // the response from calling the speech method.
+function speechMaker (obj){
+return obj.speech();
+}
 
 // 6. Create a function called addKey that takes in an object and adds a new key
 // name bedtime and assigns it a value. Return the object.
-
+function addKey(obj){
+obj.bedtime=10;
+return obj;
+;
 // 7. Create a function called keyLoop that takes in an object and loops through
 // each of the key values. If any of the key values are equal to "monkey", then
 // return "There's a monkey!", otherwise return "There's no monkey here!".
+function keyLoop(obj){
+for(var key in obj){
+if(obj [key] =="monkey"){
+return "There's a monkey!";
+}else{
+return "There's no monkey here!";
+}
+}
+}
+
 
 // Intermediate Arrays and Objects
 
 // 1. Create an array called cars of 3 objects of 3 different cars with the key
 // names of make, model, year.
+function car(){
+this.make = "Chevy";
+this.model ="Silverado";
+this.year="1993";
+}
+var cars=[newCar(), newCar(), newCar()];
 
 // 2. Create a function called findModels that takes in an array, loops through
 // the array and returns an array of all of the model values of each object.
+function findModels(arr){
+var newArr=[]
+for(i=0; i < arr.length; i++){
+newArr.push(arr[i]model);}
+return newArr; 
+}
 
 module.exports = {
   arr: arr,
